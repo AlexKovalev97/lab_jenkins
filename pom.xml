@@ -43,6 +43,10 @@
     </plugins>
     <finalName>hellokitty-${build.number}</finalName>
   </build>
+<properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+</properties>
 <repositories>
             <repository>
                     <id>maven-group</id>
