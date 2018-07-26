@@ -7,7 +7,9 @@
   <version>1.${build.number}</version>
   <name>auto-build-n-${build.number}</name>
   <properties>
-     <buildNumber>${build.number}</buildNumber>
+    <buildNumber>${build.number}</buildNumber>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
@@ -43,10 +45,6 @@
     </plugins>
     <finalName>hellokitty-${build.number}</finalName>
   </build>
-<properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-</properties>
 <repositories>
             <repository>
                     <id>maven-group</id>
