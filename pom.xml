@@ -2,13 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mcharopkin.server</groupId>
-  <artifactId>SimpleWebApp</artifactId>
+  <artifactId>hellokitty</artifactId>
   <packaging>war</packaging>
-  <version>${env.BUILD_NUMBER}</version>
-  <name>SimpleWebApp</name>
+  <version>1.${build.number}</version>
+  <name>auto-build-n-${build.number}</name>
   <properties>
-     <author>${env.GIT_COMMITTER_NAME}</author>
-     <buildNumber>${env.BUILD_NUMBER}</buildNumber>
+     <buildNumber>${build.number}</buildNumber>
   </properties>
   <dependencies>
     <dependency>
@@ -42,7 +41,7 @@
             </executions>
         </plugin>
     </plugins>
-    <finalName>SimpleWebApp</finalName>
+    <finalName>hellokitty-${build.number}</finalName>
   </build>
 <repositories>
             <repository>
