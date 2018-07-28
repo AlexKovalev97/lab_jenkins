@@ -1,10 +1,2 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Information about build: </h1>
-<h3>Author: </h3>
-
-<h3>Build number: </h3>
-
-</body>
-</html>
+sed -i '/Author:/a <p>${GIT_AUTHOR_NAME}</p>' src/main/webapp/info.html
+sed -i '/Build number:/a <p>${BUILD_NUMBER}</p>' src/main/webapp/info.html
